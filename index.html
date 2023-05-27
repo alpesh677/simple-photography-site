@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title> Space Photography</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div id="landing">
+            <div id="landing-text">
+                <div class="main-text-inner">
+                    <h1>Space Photography</h1>
+                    <h3>Beautiful Space Photography</h3>
+                    <a href="#scrollTarget" class="btn" id="view-work">
+                        View Work
+                    </a>
+
+                </div>
+            </div>
+            <div id="main-image"></div>
+        </div>
+
+        <div id="images">
+            <div id="scrollTarget" class="header">
+                <h2>Our Work</h2>
+            </div>
+
+            <!-- Photo 1 -->
+            <img src="https://source.unsplash.com/1920x1080/?space,galaxy" alt="space-images">
+            <div class="caption">
+                <h3>Photo 1</h3>
+                <p>This will be a random galaxy Photo</p>
+            </div>
+
+            <!-- Photo 2 -->
+            <img src="https://source.unsplash.com/1920x1080/?moon" alt="space-images">
+            <div class="caption">
+                <h3>Photo 2</h3>
+                <p>This will be Moon's Photo</p>
+            </div>
+
+            <!-- Photo 3 -->
+            <img src="https://source.unsplash.com/1920x1080/?Blackhole" alt="space-images">
+            <div class="caption">
+                <h3>Photo 3</h3>
+                <p>this will be a black hole photo. this is not very much accurate</p>
+            </div>
+
+            <!-- Photo 4 -->
+            <img src="https://source.unsplash.com/1920x1080/?galaxy" alt="space-images">
+            <div class="caption">
+                <h3>Photo 4</h3>
+                <p>this will be a random galaxy <br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, soluta.</p>
+            </div>
+
+            <!-- Photo 5 -->
+            <img src="https://source.unsplash.com/1920x1080/?solarsystem" alt="space-images">
+            <div class="caption">
+                <h3>Photo 5</h3>
+                <p>this will be a random space image <br> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nihil</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h3>Contact us</h3>
+        <p class="email">Email-id:
+            <strong>abc@gmail.com</strong>
+        </p>
+        <p>phone no.
+            <strong>9409963848</strong>
+        </p>
+        <p>copyright &copy; 2023 All rights reserved</p>
+    </footer>
+    <script>
+        document.querySelector("a[href='#scrollTarget']").addEventListener("click", function (event) {
+            event.preventDefault();
+            document.querySelector("#scrollTarget").scrollIntoView({
+                behavior: "smooth",
+                duration: 90000
+            });
+        });
+    </script>
+</body>
+</html>

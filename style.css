@@ -1,0 +1,145 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    height: auto;
+    background-color: lightgray;
+    letter-spacing: 0.4px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+h3 {
+    font-weight: 100;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+img {
+    display: inline;
+    width: 100%;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.3), -30px 0px 30px rgba(0, 0, 0, 0.3);
+}
+
+#landing {
+    /* display: flex; */
+    background-color: rgb(208, 236, 247);
+}
+
+#landing-text {
+    display: flex;
+    flex: 0 1 40vw;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+#main-image {
+    background: url(https://source.unsplash.com/De8wMYoSSBc);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    flex: 0 1 60vw;
+    margin: 0;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border: 1px black solid;
+    display: inline-block;
+    font-size: 1.4rem;
+    margin: 2rem 0 0;
+    font-weight: 595;
+    border-radius: 40px;
+    text-decoration: none;
+    color: #333;
+    transition: background 500ms ease;
+}
+
+.btn:hover{
+    background: black;
+    font-style: bold;
+    color: white;
+}
+
+.header{
+    background-color: black;
+    color: #e8e8e8;
+    text-align: center;
+    padding: 1rem;
+}
+
+.header h2{
+    border-right: dotted #e8e8e8;
+    border-left: dotted #e8e8e8;
+    display: inline;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.caption h3{
+    font-weight: 700;
+}
+
+.caption{
+    text-align: center;
+    padding: 0.5rem;
+    text-transform: capitalize;
+    font-weight: 550;
+}
+.caption p{
+    font-weight: 490;
+}
+
+.email{
+    text-transform: none;
+}
+footer{
+    text-align: center;
+    padding: 1.5rem 2rem;
+    margin: auto;
+    color: #333;
+    text-transform: capitalize;
+}
+ 
+footer h3{
+    font-size: 1.9rem;
+    margin-bottom: 0;
+}
+
+/* greater than 500px */
+@media (min-width: 500px) {
+    #landing{
+        display: flex;
+        height: 100%;
+    }
+
+    #landing-text{
+        height: 100vh;
+    }
+
+    #main-image{
+        height: 100vh;
+    }
+}
+
+@media (max-width: 700px){
+    .btn{
+        font-size: 1.3rem;
+        padding: 0.5rem 2rem;
+    }
+}
